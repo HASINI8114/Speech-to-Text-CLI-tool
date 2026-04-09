@@ -1,0 +1,17 @@
+# Core dependency
+SpeechRecognition>=3.10.0
+
+# Optional: needed to read MP3 files (WAV/FLAC work without it)
+pydub>=0.25.1
+
+# Optional: offline recognition engine (instead of Google)
+# pocketsphinx>=5.0.0
+
+# Optional: OpenAI Whisper (offline, highly accurate)
+# openai-whisper>=20230314
+# torch>=2.0.0
+
+# Optional: PyAudio (required for microphone input)
+# On macOS/Linux: pip install pyaudio
+# On Windows:     pip install pipwin && pipwin install pyaudio
+PyAudio>=0.2.13; sys_platform != "linux"
